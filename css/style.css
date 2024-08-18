@@ -1,0 +1,151 @@
+nav {
+  width: 100%;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+
+.nav-item {
+  display: block;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.nav-item a {
+  width: 100%;
+  background-color: #f7f7f7f3;
+  text-decoration:double;
+  font-size: 30px;
+  color: #5b7fe2;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  width: 50%;
+}
+
+footer {
+  display: flex;
+  background-color: #5b7fe2;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* INDEX */
+
+.index-init {
+  background-image: url('../img/lab.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  font-size: 10px;
+  color: #000000;
+  margin-top: 5px;
+  padding-top: 36%;
+  text-align: justify;
+}
+
+/* CONTACTO */
+
+.contact-title {
+  text-align: center;
+}
+
+.contact-div {
+  flex-direction: column;
+  width: 100%;
+}
+
+.text-input, .email-input {
+  border: 2px solid #cccccc; 
+  border-radius: 5px 5px 5px 5px;
+  font-size: 20px;
+  height: max-content;
+  flex-direction: column;
+  padding: 20px;
+  margin: 5px;
+  width: 95%;
+}
+
+.msg-area {
+  border: 2px solid #cccccc; 
+  border-radius: 5px 5px 5px 5px;
+  font-size: 12px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 95.5%;
+  resize: none;
+}
+
+.send-btn { 
+  border-radius: 5px 5px 5px 5px;
+  font-size: 30px;
+  padding: 15px 30px 15px 30px;
+  justify-content: flex-start;
+  background-color: #5b7fe2;
+  color: #fff;
+}
+
+@media(min-width: 992px) {
+
+  header {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .logo {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .nav-item {
+    font-size: 20px;
+    display: block;
+    padding: 8px;
+  }
+
+  .index-init {
+    font-size: 20px;
+  }
+  
+  /* CONTACTO */
+
+  .contact-form {
+    width: 70%;
+    margin: auto;
+    flex-flow: column wrap;
+  }
+
+  .text-input, .email-input, .msg-area {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+
+  .text-input {
+    width: 45%;
+  }
+
+  .email-input, .msg-area{
+    width: 93.5%;
+  }
+
+}
